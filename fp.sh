@@ -13,4 +13,5 @@ test -x "$(command -v flatpak)" || printf "Flatpak package was not found.\n"
 test -z $1 && flatpak list --app && exit 
 
 ##main
-flatpak run "$app" "$2"
+test $2 && flatpak run "$app" "$2"
+test $1 && flatpak run "$app"
