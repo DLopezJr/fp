@@ -13,7 +13,20 @@ The side-effect is that launching apps is difficult to remeber and tedious to ty
 
 ```fp``` uses ```flatpak run``` and extended regex to search and run the matching flatpak.
 
-### Template
+### Install
+```
+$ git clone https://github.com/DLopezJr/fp
+$ cd fp
+$ test -x "$(command -v sudo)" && sudo make install || su -c "make install"
+```
+### Uninstall
+```
+$ git clone https://github.com/DLopezJr/fp
+$ cd fp
+$ test -x "$(command -v sudo)" && sudo make uninstall || su -c "make uninstall"
+```
+
+### Usage
 
 ```
 $ fp <package_name>
@@ -39,6 +52,5 @@ $ fp vlc --help
 ### TODO:
 - Packaging for repos
 - Manpage or Help flag
-- Makefile
 - Error Handling
 - Full Postional Parameter Support
