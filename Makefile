@@ -6,8 +6,8 @@ PREFIX = /usr/local
 
 #TARGETS
 install:
-  cp    fp.sh $(PREFIX)/fp
-  chmod 755   $(PREFIX)/fp
+  cp    fp.sh $(PREFIX)/bin/fp
+  chmod 755   $(PREFIX)/bin/fp
   
 uninstall:
   rm $(PREFIX)/bin/fp
