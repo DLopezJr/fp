@@ -13,20 +13,23 @@ The side-effect is that launching apps is difficult to remeber and tedious to ty
 
 ```fp``` uses ```flatpak run``` and extended regex to search and run the matching flatpak.
 
-### Install
+#### Dependencies
+```flatpak``` (https://flatpak.org/setup/)
+
+#### Install
 ```
 $ git clone https://github.com/DLopezJr/fp
 $ cd fp
 $ test -x "$(command -v sudo)" && sudo make install || su -c "make install"
 ```
-### Uninstall
+#### Uninstall
 ```
 $ git clone https://github.com/DLopezJr/fp
 $ cd fp
 $ test -x "$(command -v sudo)" && sudo make uninstall || su -c "make uninstall"
 ```
 
-### Usage
+#### Usage
 
 ```
 $ fp <package_name>
@@ -36,7 +39,7 @@ $ fp <package_name>
 $ fp <package_name> <$2>
 ```
 
-### Example
+#### Example
 ```
 $ fp vlc
 ```
@@ -45,11 +48,11 @@ $ fp vlc
 $ fp vlc --help 
 ```
 
-### Comments
+#### Comments
 - The Flatpak naming scheme allows case-insenstive names. This has caused some complexity. 
   - Currently only lower case stdin is functional.
 
-### TODO:
+#### TODO:
 - Packaging for repos
 - Manpage or Help flag
 - Error Handling
