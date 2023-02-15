@@ -9,7 +9,7 @@ Flatpak requires a "[reverse-DNS style](https://docs.flatpak.org/en/latest/conve
 
 This is due to "[security concerns](https://github.com/flatpak/flatpak/issues/994)".
 
-The side-effect is that launching apps is difficult to remeber and tedious to type.
+The side-effect is that launching apps is difficult to remember and tedious to type.
 
 ## DETAILS
 
