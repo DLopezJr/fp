@@ -26,7 +26,6 @@ $ test -x "$(command -v sudo)" && sudo make install || su -c "make install"
 ```
 #### Uninstall
 ```
-$ git clone https://github.com/DLopezJr/fp
 $ cd fp
 $ test -x "$(command -v sudo)" && sudo make uninstall || su -c "make uninstall"
 ```
