@@ -38,7 +38,7 @@ $ fp <package_name>
 ```
 
 ```
-$ fp <package_name> <$2>
+$ fp <package_name> <$@>
 ```
 
 #### Example
