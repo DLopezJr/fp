@@ -22,12 +22,12 @@ The side-effect is that launching apps is difficult to remember and tedious to t
 ```
 $ git clone https://github.com/DLopezJr/fp
 $ cd fp
-$ test -x "$(command -v sudo)" && sudo make install || su -c "make install"
+$ sudo make install || su -c "make install"
 ```
 #### Uninstall
 ```
 $ cd fp
-$ test -x "$(command -v sudo)" && sudo make uninstall || su -c "make uninstall"
+$ sudo make uninstall || su -c "make uninstall"
 ```
 
 #### Usage
