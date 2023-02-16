@@ -12,5 +12,8 @@ test -x "$(command -v flatpak)" || printf "Flatpak package was not found.\n"
 ##check if app name was entered by user
 test -z $1 && flatpak list --app && exit 
 
+##remove app name from "$@" array
+shift 1
+
 ##main
-flatpak run "$app" $2
+flatpak run "$app" "$@"
