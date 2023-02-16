@@ -58,4 +58,3 @@ $ fp vlc --help
 - Packaging for repos
 - Manpage or Help flag
 - Error Handling
-- Full Postional Parameter Support
