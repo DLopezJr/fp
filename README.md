@@ -53,12 +53,7 @@ $ fp vlc
 $ fp vlc --help 
 ```
 
-#### Comments
-- The Flatpak naming scheme allows case-insenstive names. This has caused some complexity. 
-  - Currently only lower case stdin is functional.
-
 #### TODO:
-- Translate all captalized characters in $1 to lower case.
 - Packaging for repos
 - Manpage or Help flag
 - Error Handling
