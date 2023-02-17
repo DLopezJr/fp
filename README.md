@@ -9,7 +9,7 @@ Flatpak requires a "[reverse-DNS style](https://docs.flatpak.org/en/latest/conve
 
 This is due to "[security concerns](https://github.com/flatpak/flatpak/issues/994)".
 
-The side-effect is: launching apps is difficult to remember & tedious to type.
+The side-effect is that launching apps is difficult to remember & tedious to type.
 - ```$ flatpak run org.videolan.VLC```
 
 Attempting to solve this by adding flatpak's app directories to "$PATH" is said to be "[insecure](https://github.com/flatpak/flatpak/issues/994#issuecomment-328154457)". 
