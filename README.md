@@ -9,11 +9,15 @@ Flatpak requires a "[reverse-DNS style](https://docs.flatpak.org/en/latest/conve
 
 This is due to "[security concerns](https://github.com/flatpak/flatpak/issues/994)".
 
-The side-effect is that launching apps is difficult to remember and tedious to type.
+The side-effect is: launching apps is difficult to remember & tedious to type.
+- ```$ flatpak run org.videolan.VLC```
+
+Attempting to solve this by adding flatpak's app directories to "$PATH" is said to be "[insecure](https://github.com/flatpak/flatpak/issues/994#issuecomment-328154457)". 
 
 ## DETAILS
+```fp``` solves this by being a wrapper.
 
-```fp``` uses ```flatpak run``` and extended regex to search and run the matching flatpak.
+It uses ```flatpak run``` and extended regex to search and run the matching flatpak.
 
 #### Dependencies
 ```flatpak``` (https://flatpak.org/setup/)
@@ -54,6 +58,7 @@ $ fp vlc --help
   - Currently only lower case stdin is functional.
 
 #### TODO:
+- Translate all captalized characters in $1 to lower case.
 - Packaging for repos
 - Manpage or Help flag
 - Error Handling
