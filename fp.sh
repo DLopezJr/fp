@@ -3,7 +3,7 @@
 #PURPOSE: Frontend wrapper for $(flatpak run)
 
 #VARIABLE(S)
-app=$(flatpak list --app | cut -f2 | awk -F. -v app="$1" '(tolower($NF) ~ app)')
+app=$(flatpak list --app | cut -f2 | awk -F. -v app="$1" '(tolower($NF) ~ tolower(app))')
 
 #FUNCTION(S)
 ##check if flatpak is installed and accesible to $PATH
