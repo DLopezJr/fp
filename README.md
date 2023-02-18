@@ -5,7 +5,7 @@ An Easier Way to Launch Flatpaks
 
 ## PURPOSE
 
-Flatpak requires a "[reverse-DNS style](https://docs.flatpak.org/en/latest/conventions.html#application-ids)" naming scheme for applications. 
+Flatpak requires a [reverse-DNS style](https://docs.flatpak.org/en/latest/conventions.html#application-ids) naming scheme for applications. 
 
 This is due to "[security concerns](https://github.com/flatpak/flatpak/issues/994)".
 
@@ -17,7 +17,7 @@ Attempting to solve this by adding flatpak's app directories to "$PATH" is said 
 ## DETAILS
 ```fp``` solves this by being a wrapper.
 
-It uses ```flatpak run``` and extended regex to search and run the matching flatpak.
+It uses ```flatpak run``` and [extended regex](https://www.math.utah.edu/docs/info/gawk_5.html) to search and run the matching flatpak.
 
 #### Dependencies
 ```flatpak``` (https://flatpak.org/setup/)
