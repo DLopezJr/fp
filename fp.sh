@@ -7,10 +7,10 @@ app=$(flatpak list --app | cut -f2 | awk -F. -v app="$1" '(tolower($NF) ~ tolowe
 
 #FUNCTION(S)
 ##check if flatpak is installed and accesible to $PATH
-command -v flatpak || printf "Flatpak package was not found.\n";
+command -v flatpak >/dev/null 2>&1 || printf "Flatpak package was not found.\n";
 
-##check if app name was NOT entered by user
-test -z $1 && printf "Enter an app to fp.\n\$ fp <app>\n\nINSTALLED APPS\n$app\n" && exit; 
+##check if no arguements were enetered by user 
+test "$#" -eq "0" && printf "Enter an app to fp.\n\$ fp <app>\n\nINSTALLED APPS\n$app\n" && exit 1; 
 
 ##remove app name from "$@" array
 shift 1;
