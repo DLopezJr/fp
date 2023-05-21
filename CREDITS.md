@@ -1,5 +1,5 @@
 
-#### Frank Brütting - [[@GitHub](https://github.com/fbruetting)]
+#### Frank Brütting [[@GitHub](https://github.com/fbruetting)]
 - Created the package name [[SOURCE](https://github.com/flatpak/flatpak/issues/994#issuecomment-482839419)]
 
 ---
