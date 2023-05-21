@@ -55,5 +55,5 @@ $ fp vlc --help
 
 #### TODO:
 - Packaging for repos
-- Manpage or Help flag
-- Error Handling
+- Manpage 
+- tab-compleition 
