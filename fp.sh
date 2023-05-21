@@ -2,7 +2,7 @@
 #PURPOSE: Wrapper for $(flatpak run)
 
 ##check if flatpak is installed and accesible to $PATH
-command -v flatpak >/dev/null 2>&1 || { printf "Flatpak package was not found.\n"; exit 1; };
+command -v flatpak >/dev/null 2>&1 || { printf "Flatpak package was not found.\n"; exit 1; }
 
 ##check if any flatpak packages are installed
 test "$(flatpak list --all | head -c1 | wc -c)" -eq "0" && { printf "No Flatpak packages are installed.\n"; exit 1; }
