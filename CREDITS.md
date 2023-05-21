@@ -20,4 +20,4 @@
 ---
 
 #### pythoninthegrass [[@Github](https://github.com/pythoninthegrass)]
-- Inspiration for using "$($# -eq 0)" [[SOURCE](https://github.com/flatpak/flatpak/issues/994#issuecomment-1545154815]
+- Inspiration for using "$($# -eq 0)" [[SOURCE](https://github.com/flatpak/flatpak/issues/994#issuecomment-1545154815)]
