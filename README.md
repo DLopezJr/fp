@@ -56,4 +56,5 @@ $ fp vlc --help
 #### TODO:
 - Packaging for repos
 - Manpage 
-- tab-compleition 
+- tab-compleition
+- fuzzy finder support
