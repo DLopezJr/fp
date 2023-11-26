@@ -22,7 +22,13 @@ It uses ```flatpak run``` and [extended regex](https://www.math.utah.edu/docs/in
 #### Dependencies
 ```flatpak``` (https://flatpak.org/setup/)
 
-#### Install
+#### Install (user)
+```
+$ git clone https://github.com/DLopezJr/fp
+$ cd fp
+$ make install
+```
+#### Install (system)
 ```
 $ git clone https://github.com/DLopezJr/fp
 $ cd fp
