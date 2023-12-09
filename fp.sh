@@ -1,7 +1,8 @@
 #!/bin/sh -e
 #PURPOSE: Wrapper for $(flatpak run)
 
-main() { app="$1";
+main() 
+{ app="$1"; # int
 	##check if flatpak is installed and accesible to $PATH
 	if ! command -v flatpak 1> /dev/null 2> /dev/null; then {
 		printf "ERROR: The 'flatpak' package was not found.\n" >&2; 
